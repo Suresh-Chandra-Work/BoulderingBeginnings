@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(192, 140, 140);
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* Style for buttons mimicking Material UI */
+.mui-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.mui-btn:hover {
+    background-color: #3700b3;
+}
+
+.mui-btn--raised {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.mui-btn--flat {
+    background-color: transparent;
+    color: #6200ea;
+}
+
+.mui-btn--flat:hover {
+    background-color: rgba(98, 0, 234, 0.1);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Board Grid */
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(18, 50px);
+    gap: 2px;
+    justify-content: center;
+    margin-top: 20px;
+}
+#boardName {
+    margin-top: 2px;
+    height: 20px;
+}
+.hold {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.highlighted {
+    border: 3px solid #ff0;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .highlighted {
+    border-color: #ff6347;
+}
+
+.saved-board-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.delete-icon {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.anotherColor {
+    background-color: #248e95;
+}
